@@ -18,19 +18,19 @@ namespace Repositories.Divisions
             return;
         }
 
-        public Division Get(int divisionId)
+        public Task<Division> Get(int divisionId)
         {
-            return new Division { DivisionId = 666, Name = "Skärselden" };
+            throw new NotImplementedException();
         }
 
-        public List<Division> GetAll()
+        public Task<List<Division>> GetAll()
         {
             throw new NotImplementedException();
         }
 
         public void Update(int divisionId)
         {
-            throw new NotImplementedException();
+            return;
         }
     }
 }

@@ -8,10 +8,10 @@ namespace Repositories.Divisions
 {
     public interface IDivisionRepository
     { 
-        List<Division> GetAll();
+        Task<List<Division>> GetAll();
 
         void Add(string name);
-        Division Get(int divisionId);
+        Task<Division> Get(int divisionId);
         void Delete(int divisionId);
         void Update(int divisionId);
     }
