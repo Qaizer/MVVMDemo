@@ -70,6 +70,8 @@
     <Compile Include="Division.cs">
       <DependentUpon>MVVMDemoDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="IDivisionRepository.cs" />
+    <Compile Include="IUserRepository.cs" />
     <Compile Include="MVVMDemoDBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
