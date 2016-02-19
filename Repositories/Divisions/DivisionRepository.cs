@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,24 +29,33 @@ namespace Repositories.Divisions
         {
             using(var context = new MVVMDemoDBEntities())
             {
-                context.Divisions.Remove(context.Divisions.FirstOrDefault(x => x.DivisionId == divisionId));
+                context.Divisions.Remove(await context.Divisions.FirstOrDefaultAsync(x => x.DivisionId == divisionId));
                 await context.SaveChangesAsync();
             }
         }
 
-        public Division Get(int divisionId)
+        public async Task<Division> Get(int divisionId)
         {
-            throw new NotImplementedException();
+            using (var context = new MVVMDemoDBEntities())
+            {
+                return await context.Divisions.FirstOrDefaultAsync(x => x.DivisionId == divisionId);
+            }
         }
 
-        public List<Division> GetAll()
+        public async Task<List<Division>> GetAll()
         {
-            throw new NotImplementedException();
+            using (var context = new MVVMDemoDBEntities())
+            {
+                return await context.Divisions.ToListAsync();
+            }
         }
 
-        public void Update(int divisionId)
+        public async void Update(Division division)
         {
-            throw new NotImplementedException();
+            using(var context = new MVVMDemoDBEntities())
+            {
+
+            }
         }
     }
 }
