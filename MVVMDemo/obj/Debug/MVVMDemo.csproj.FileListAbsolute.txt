@@ -70,3 +70,5 @@ C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\bin\Debug\Microsoft.AspNet.Sca
 C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.xml
 C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\bin\Debug\EnvDTE.xml
 C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\bin\Debug\EnvDTE80.xml
+C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\bin\Debug\EntityFramework.SqlServer.xml
