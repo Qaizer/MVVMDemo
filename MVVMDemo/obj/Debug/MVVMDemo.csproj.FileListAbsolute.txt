@@ -63,3 +63,12 @@ C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.csproj.Gene
 C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\obj\Debug\App.baml
 C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\MVVMDemo\obj\Debug\UserView.g.cs
 C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\MVVMDemo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\MVVMDemo\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll
+C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\MVVMDemo\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.dll
+C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\MVVMDemo\bin\Debug\EnvDTE.dll
+C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\MVVMDemo\bin\Debug\EnvDTE80.dll
+C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\MVVMDemo\bin\Debug\stdole.dll
+C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\MVVMDemo\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.xml
+C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\MVVMDemo\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.xml
+C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\MVVMDemo\obj\Debug\App.baml
+C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\MVVMDemo\obj\Debug\UserView.baml

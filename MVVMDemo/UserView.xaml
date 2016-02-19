@@ -9,7 +9,7 @@
 
     <Grid>
         <DataGrid x:Name="dataGrid" ItemsSource="{Binding UserList}" HorizontalAlignment="Left" Margin="42,60,0,0" VerticalAlignment="Top" Height="136" Width="200"/>
-        <DataGrid x:Name="dataGrid1" ItemsSource="{Binding DivisionList}" HorizontalAlignment="Left" Margin="374,128,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dataGrid1" ItemsSource="{Binding DivisionList}" HorizontalAlignment="Left" Margin="325,60,0,0" VerticalAlignment="Top" Height="136" Width="190"/>
 
 
 
