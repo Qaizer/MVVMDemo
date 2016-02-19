@@ -10,7 +10,6 @@ namespace MVVMDemo
     public static class LoadingEvents
     {
 
-
         public static string GetMyProperty(DependencyObject obj)
         {
             return (string)obj.GetValue(MyPropertyProperty);

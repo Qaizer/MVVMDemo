@@ -28,6 +28,11 @@ namespace Repositories.Users
             throw new NotImplementedException();
         }
 
+        public Task<List<User>> GetAll(int divisionId)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(User user)
         {
             return;

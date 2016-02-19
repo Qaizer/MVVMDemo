@@ -44,6 +44,14 @@ namespace Repositories.Users
             }
         }
 
+        public async Task<List<User>> GetAll(int divisionId)
+        {
+            using (var context = new MVVMDemoDBEntities())
+            {
+                return await context.Users.Where(x => x.Division == divisionId).ToListAsync();
+            }
+        }
+
         public async void Update(User user)
         {
             using (var context = new MVVMDemoDBEntities())

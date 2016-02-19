@@ -9,6 +9,7 @@ namespace Repositories.Users
     public interface IUserRepository
     {
         Task<List<User>> GetAll();
+        Task<List<User>> GetAll(int divisionId);
 
         void Add(User user);
         Task<User> Get(int userId);

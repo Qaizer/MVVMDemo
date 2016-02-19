@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\MVVMDemo\App.xaml
-21912581963
+2815851855
 
-15334528455
+191873147355
 181168540200
-MainWindow.xaml;UserView.xaml;
+Main\MainWindow.xaml;Users\UserView.xaml;
 
-True
+False
 
