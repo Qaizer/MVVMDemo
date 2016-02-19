@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Repositories
+namespace Repositories.Divisions
 {
     public interface IDivisionRepository
     { 
-        IList<Division> GetAll();
+        List<Division> GetAll();
 
-        void Add(Division division);
+        void Add(string name);
         Division Get(int divisionId);
         void Delete(int divisionId);
         void Update(int divisionId);

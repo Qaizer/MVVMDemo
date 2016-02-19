@@ -66,12 +66,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Division.cs">
       <DependentUpon>MVVMDemoDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="IDivisionRepository.cs" />
-    <Compile Include="IUserRepository.cs" />
+    <Compile Include="Divisions\DivisionMockRepository.cs" />
+    <Compile Include="Divisions\DivisionRepository.cs" />
+    <Compile Include="Divisions\IDivisionRepository.cs" />
     <Compile Include="MVVMDemoDBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -87,10 +87,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MVVMDemoDBModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs">
       <DependentUpon>MVVMDemoDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Users\IUserRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\UserMockRepository.cs" />
+    <Compile Include="Users\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\MVVMDemoDB.mdf">
@@ -124,13 +127,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
     <EntityDeploy Include="MVVMDemoDBModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>MVVMDemoDBModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
     <None Include="MVVMDemoDBModel.edmx.diagram">
       <DependentUpon>MVVMDemoDBModel.edmx</DependentUpon>
     </None>

@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="43391d1d81bb43de817a7a47acee8570" Name="Diagram1">
+      <Diagram DiagramId="d8d497c506f34728956e511918d10e6c" Name="Diagram1">
         <EntityTypeShape EntityType="MVVMDemoDBModel.Division" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="MVVMDemoDBModel.User" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
         <AssociationConnector Association="MVVMDemoDBModel.FK__User__Division__239E4DCF" ManuallyRouted="false" />
