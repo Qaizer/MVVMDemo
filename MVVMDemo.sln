@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMDemo", "MVVMDemo\MVVMDemo.csproj", "{A25BDEFF-E116-4CC2-AD39-04FBAF7A8AD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{D1AB339F-7359-4FCB-B46E-41852C877066}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A25BDEFF-E116-4CC2-AD39-04FBAF7A8AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A25BDEFF-E116-4CC2-AD39-04FBAF7A8AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A25BDEFF-E116-4CC2-AD39-04FBAF7A8AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A25BDEFF-E116-4CC2-AD39-04FBAF7A8AD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1AB339F-7359-4FCB-B46E-41852C877066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1AB339F-7359-4FCB-B46E-41852C877066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1AB339F-7359-4FCB-B46E-41852C877066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1AB339F-7359-4FCB-B46E-41852C877066}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
