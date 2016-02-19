@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MVVMDemoDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Division">
+    <Key>
+      <PropertyRef Name="DivisionId" />
+    </Key>
+    <Property Name="DivisionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__User__Division__239E4DCF" FromRole="Division" ToRole="User" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Division" Type="Int32" />
+    <NavigationProperty Name="Division1" Relationship="Self.FK__User__Division__239E4DCF" FromRole="User" ToRole="Division" />
+  </EntityType>
+  <Association Name="FK__User__Division__239E4DCF">
+    <End Role="Division" Type="Self.Division" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Division">
+        <PropertyRef Name="DivisionId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="Division" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MVVMDemoDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Divisions" EntityType="Self.Division" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK__User__Division__239E4DCF" Association="Self.FK__User__Division__239E4DCF">
+      <End Role="Division" EntitySet="Divisions" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
