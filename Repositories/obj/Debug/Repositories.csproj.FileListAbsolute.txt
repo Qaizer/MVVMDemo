@@ -21,3 +21,15 @@ C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\Repositories\bin\Debug
 C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\Repositories\obj\Debug\Repositories.dll
 C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\Repositories\obj\Debug\Repositories.pdb
 C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\Repositories\obj\Debug\Repositories.csprojResolveAssemblyReference.cache
+C:\Users\Peter\Documents\GitHub\MVVMDemo\Repositories\bin\Debug\App_Data\MVVMDemoDB.mdf
+C:\Users\Peter\Documents\GitHub\MVVMDemo\Repositories\bin\Debug\App_Data\MVVMDemoDB_log.ldf
+C:\Users\Peter\Documents\GitHub\MVVMDemo\Repositories\bin\Debug\Repositories.dll.config
+C:\Users\Peter\Documents\GitHub\MVVMDemo\Repositories\bin\Debug\Repositories.dll
+C:\Users\Peter\Documents\GitHub\MVVMDemo\Repositories\bin\Debug\Repositories.pdb
+C:\Users\Peter\Documents\GitHub\MVVMDemo\Repositories\bin\Debug\EntityFramework.dll
+C:\Users\Peter\Documents\GitHub\MVVMDemo\Repositories\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Peter\Documents\GitHub\MVVMDemo\Repositories\bin\Debug\EntityFramework.xml
+C:\Users\Peter\Documents\GitHub\MVVMDemo\Repositories\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Peter\Documents\GitHub\MVVMDemo\Repositories\obj\Debug\Repositories.csprojResolveAssemblyReference.cache
+C:\Users\Peter\Documents\GitHub\MVVMDemo\Repositories\obj\Debug\Repositories.dll
+C:\Users\Peter\Documents\GitHub\MVVMDemo\Repositories\obj\Debug\Repositories.pdb

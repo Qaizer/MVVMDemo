@@ -5,9 +5,14 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MVVMDemo"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="525">
+             d:DesignHeight="300" d:DesignWidth="525" Background="White" local:LoadingEvents.MyProperty="PopulateList">
+
     <Grid>
-        <Label x:Name="label" Content="Test" HorizontalAlignment="Left" Margin="126,132,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dataGrid" ItemsSource="{Binding UserList}" HorizontalAlignment="Left" Margin="42,60,0,0" VerticalAlignment="Top" Height="136" Width="200"/>
+        <DataGrid x:Name="dataGrid1" ItemsSource="{Binding DivisionList}" HorizontalAlignment="Left" Margin="374,128,0,0" VerticalAlignment="Top"/>
+
+
+
 
     </Grid>
 </UserControl>
