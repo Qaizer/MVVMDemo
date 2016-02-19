@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MVVMDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
+        Title="MainWindow" Height="350" Width="525" DataContext="{StaticResource MainViewModel}">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type local:UserViewModel}">
+            <local:UserView />
+        </DataTemplate>
         
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button" Content="Open new view" Command="{Binding NavCommand}" CommandParameter="User" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="111" Grid.Row="0"/>
+        <ContentControl Content="{Binding CurrentViewModel}" Grid.Row="1"/>
+
+
+
+
     </Grid>
 </Window>

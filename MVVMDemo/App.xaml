@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:MVVMDemo"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <local:MainWindowViewModel x:Key="MainViewModel"/>
     </Application.Resources>
 </Application>
