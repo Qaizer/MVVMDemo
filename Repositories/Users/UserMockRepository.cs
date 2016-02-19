@@ -10,27 +10,27 @@ namespace Repositories.Users
     {
         public void Add(User user)
         {
-            throw new NotImplementedException();
+            return;
         }
 
         public void Delete(int userId)
         {
-            throw new NotImplementedException();
+            return;
         }
 
-        public User Get(int userId)
+        public Task<User> Get(int userId)
         {
             throw new NotImplementedException();
         }
 
-        public IList<User> GetAll()
+        public Task<List<User>> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Update(int userId)
+        public void Update(User user)
         {
-            throw new NotImplementedException();
+            return;
         }
     }
 }

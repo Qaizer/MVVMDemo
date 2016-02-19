@@ -8,11 +8,11 @@ namespace Repositories.Users
 {
     public interface IUserRepository
     {
-        IList<User> GetAll();
+        Task<List<User>> GetAll();
 
         void Add(User user);
-        User Get(int userId);
+        Task<User> Get(int userId);
         void Delete(int userId);
-        void Update(int userId);
+        void Update(User user);
     }
 }
