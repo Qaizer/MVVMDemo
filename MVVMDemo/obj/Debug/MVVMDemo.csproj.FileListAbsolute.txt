@@ -61,3 +61,5 @@ C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.g.resources
 C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.Properties.Resources.resources
 C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.csproj.GenerateResource.Cache
 C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\obj\Debug\App.baml
+C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\MVVMDemo\obj\Debug\UserView.g.cs
+C:\Users\Cristoffer\Documents\GitHubVisualStudio\MVVMDemo\MVVMDemo\obj\Debug\GeneratedInternalTypeHelper.g.cs

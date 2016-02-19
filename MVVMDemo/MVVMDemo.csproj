@@ -54,6 +54,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="LoadingEvents.cs" />
     <Compile Include="RelayCommand.cs" />
     <Compile Include="UserView.xaml.cs">
       <DependentUpon>UserView.xaml</DependentUpon>
