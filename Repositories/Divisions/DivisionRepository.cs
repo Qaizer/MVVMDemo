@@ -50,6 +50,11 @@ namespace Repositories.Divisions
             }
         }
 
+        public void Update(int divisionId)
+        {
+            throw new NotImplementedException();
+        }
+
         public async void Update(Division division)
         {
             using(var context = new MVVMDemoDBEntities())

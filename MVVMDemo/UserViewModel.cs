@@ -33,9 +33,9 @@ namespace MVVMDemo
         public async void PopulateList()
         {
 
-            var tempUserList = (List<User>)_userRepository.GetAll();
-            UserList = new ObservableCollection<User>(tempUserList);
-            var tempDivisionList = (List<Division>)_divisionRepository.GetAll();
+            //var tempUserList = (List<User>)_userRepository.GetAll();
+            //UserList = new ObservableCollection<User>(tempUserList);
+            var tempDivisionList = await _divisionRepository.GetAll();
             DivisionList = new ObservableCollection<Division>(tempDivisionList);
 
         }

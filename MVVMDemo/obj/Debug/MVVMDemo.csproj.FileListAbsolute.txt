@@ -61,3 +61,12 @@ C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.g.resources
 C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.Properties.Resources.resources
 C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\obj\Debug\MVVMDemo.csproj.GenerateResource.Cache
 C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\obj\Debug\App.baml
+C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll
+C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.dll
+C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\bin\Debug\EnvDTE.dll
+C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\bin\Debug\EnvDTE80.dll
+C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\bin\Debug\stdole.dll
+C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.xml
+C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.xml
+C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\bin\Debug\EnvDTE.xml
+C:\Users\Peter\Documents\GitHub\MVVMDemo\MVVMDemo\bin\Debug\EnvDTE80.xml

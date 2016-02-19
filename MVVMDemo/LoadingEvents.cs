@@ -13,22 +13,22 @@ namespace MVVMDemo
 
         public static string GetMyProperty(DependencyObject obj)
         {
-            return (string)obj.GetValue(MyLoadedEvent);
+            return (string)obj.GetValue(MyPropertyProperty);
         }
 
-        public static void SetMyProperty(DependencyObject obj, int value)
+        public static void SetMyProperty(DependencyObject obj, string value)
         {
-            obj.SetValue(MyLoadedEvent, value);
+            obj.SetValue(MyPropertyProperty, value);
         }
 
         // Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty MyLoadedEvent =
-            DependencyProperty.RegisterAttached("MyProperty", typeof(int), typeof(LoadingEvents), new PropertyMetadata(null, SetMyLoadedEvent));
+        public static readonly DependencyProperty MyPropertyProperty =
+            DependencyProperty.RegisterAttached("MyProperty", typeof(string), typeof(LoadingEvents), new PropertyMetadata(null, LoadedEventChanged));
 
-        private static void SetMyLoadedEvent(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        private static void LoadedEventChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             FrameworkElement element = d as FrameworkElement;
-            if(element != null)
+            if (element != null)
             {
                 element.Loaded += (s1, s2) =>
                 {
@@ -36,10 +36,10 @@ namespace MVVMDemo
                     if (viewModel == null)
                         return;
                     var methodInfo = viewModel.GetType().GetMethod(e.NewValue.ToString());
+                    if (methodInfo != null)
+                        methodInfo.Invoke(viewModel, null);
                 };
-
             }
         }
-
     }
 }
