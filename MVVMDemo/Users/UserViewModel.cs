@@ -12,18 +12,25 @@ using MVVMDemo.Extensions;
 using MVVMDemo.Divisions;
 using MVVMDemo.Users;
 
-namespace MVVMDemo
+namespace MVVMDemo.Users
 {
     public class UserViewModel : BindableBase
     {
 
-        private ObservableCollection<User> _userList;
+        private ObservableCollection<UserModel> _userList;
         private ObservableCollection<DivisionModel> _divisionList;
         private IUserRepository _userRepository = new UserRepository();
         private IDivisionRepository _divisionRepository = new DivisionRepository();
+        private DivisionModel _selectedDivision;
+        private UserModel _selectedUser;
+         
+        public UserModel SelectedUser
+        {
+            get { return _selectedUser; }
+            set { SetProperty(ref _selectedUser, value); }
+        }
 
-
-        public ObservableCollection<User> UserList
+        public ObservableCollection<UserModel> UserList
         {
             get { return _userList; }
             set { SetProperty(ref _userList, value); }
@@ -32,7 +39,13 @@ namespace MVVMDemo
         public ObservableCollection<DivisionModel> DivisionList
         {
             get { return _divisionList; }
-            set { SetProperty(ref _divisionList, value); }
+            set { SetProperty(ref _divisionList, value);  }
+        }
+
+        public DivisionModel SelectedDivision
+        {
+            get { return _selectedDivision; }
+            set { SetProperty(ref _selectedDivision, value); UpdateUserList(); }
         }
 
         public async void PopulateList()
@@ -44,9 +57,13 @@ namespace MVVMDemo
             foreach (var div in DivisionList)
             {
                 var users = await _userRepository.GetAll(div.DivisionId);
-                div.Users = (List<UserModel>)users.Select(x => x.MapToModel());
-                
+                div.Users = users.Select(x => x.MapToModel()).ToList();
             }
+        }
+
+        public void UpdateUserList()
+        {
+            UserList = new ObservableCollection<UserModel>(SelectedDivision.Users);
         }
     }
 }

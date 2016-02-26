@@ -10,7 +10,6 @@ namespace MVVMDemo.Users
     {
         private string _firstName;
         private string _lastName;
-        private string _fullName;
 
         public int UserId { get; set; }
 
@@ -28,8 +27,7 @@ namespace MVVMDemo.Users
 
         public string FullName
         {
-            get { return _fullName; }
-            set { _fullName = _firstName + " " + _lastName; }
+            get { return string.Format("{0} {1}", FirstName, LastName); }
         }
     }
 }

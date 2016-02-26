@@ -46,6 +46,7 @@ namespace Repositories.Divisions
         {
             using (var context = new MVVMDemoDBEntities())
             {
+                //await Task.Delay(2000);
                 return await context.Divisions.ToListAsync();
             }
         }

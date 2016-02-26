@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="MVVMDemo.UserView"
+﻿<UserControl x:Class="MVVMDemo.Users.UserView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -8,9 +8,12 @@
              d:DesignHeight="400" d:DesignWidth="525" Background="White" local:LoadingEvents.MyProperty="PopulateList">
 
     <Grid>
-        <DataGrid x:Name="dataGrid" ItemsSource="{Binding UserList}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="auto" Width="auto" Margin="10,0,0,0"/>
-        <DataGrid x:Name="dataGrid1" ItemsSource="{Binding DivisionList}" HorizontalAlignment="Left" Margin="10,133,0,0" VerticalAlignment="Top" Height="auto" Width="auto"/>
+        <StackPanel Orientation="Horizontal">
 
+            <DataGrid x:Name="dataGrid1" ItemsSource="{Binding DivisionList}" SelectedItem="{Binding SelectedDivision}" HorizontalAlignment="Left" Margin="10,10,10,10"  Height="300" Width="180"/>
+            <DataGrid x:Name="dataGrid" ItemsSource="{Binding UserList}" SelectedItem="{Binding SelectedUser}" Height="300" Width="270" Margin="10,10,10,10"/>
+        <Label x:Name="label" Content="{Binding SelectedUser.FullName}" HorizontalAlignment="Left" Margin="360,177,0,0" VerticalAlignment="Top"/>
+        </StackPanel>
 
 
 

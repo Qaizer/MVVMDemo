@@ -1,16 +1,16 @@
-﻿<Window x:Class="MVVMDemo.MainWindow"
+﻿<Window x:Class="MVVMDemo.Main.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MVVMDemo"
+        xmlns:local="clr-namespace:MVVMDemo.Main"
+        xmlns:user="clr-namespace:MVVMDemo.Users"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525" DataContext="{StaticResource MainViewModel}">
+        Title="MainWindow" Height="350" Width="525" DataContext="{StaticResource MainWindowViewModel}">
     <Window.Resources>
-        <DataTemplate DataType="{x:Type local:UserViewModel}">
-            <local:UserView />
+        <DataTemplate DataType="{x:Type user:UserViewModel}">
+            <user:UserView></user:UserView>
         </DataTemplate>
-        
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
